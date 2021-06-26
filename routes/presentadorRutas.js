@@ -10,4 +10,6 @@ app.use(require('./users/obtenerUsuario'));
 app.use(require('./authentication/iniciarSesion'));
 app.use(require('./authentication/cerrarSesion'));
 
+app.use(require('./messages/enviarMensaje'));
+
 module.exports = app;

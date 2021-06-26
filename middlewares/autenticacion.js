@@ -9,8 +9,6 @@ const verificarToken = (req, res, next) => {
 
         if (err) { return res.status(401).json({ data: {}, error: false, message: "Token no válido" }); }
 
-        //req.usuario = decoded.usuario;
-
         next();
 
     });
@@ -18,6 +16,7 @@ const verificarToken = (req, res, next) => {
 
 
 };
+
 
 module.exports = {
     verificarToken

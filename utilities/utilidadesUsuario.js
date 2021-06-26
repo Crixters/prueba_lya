@@ -11,6 +11,7 @@ const crearTokenDeUsuario = (usuarioCreado) => {
 
 }
 
+
 const obtenerUsuarioSiTokenVerificado = async(token) => {
 
     let usuarioObtenido = await jwt.verify(token, process.env.SEED, (err, Payload) => {
