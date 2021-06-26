@@ -28,7 +28,7 @@ app.post('/api/messages/send', middlewares.verificarToken, async(req, res) => {
 
         let mensajeAEnviar = { message: respuesta.data.fact, user: usuario._id };
 
-        client.publish('lyatest/Oscar', JSON.stringify(mensajeAEnviar));
+        client.publish('lyatest/CristianGalvan', JSON.stringify(mensajeAEnviar));
 
         res.status(200).json({ data: mensajeAEnviar, error: false, message: "" });
 
